@@ -1,104 +1,110 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Navica – Career Guidance Chatbot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navica – AI Career Guidance Assistant</title>
 
   <style>
     body {
       margin: 0;
       padding: 0;
+      background: linear-gradient(135deg, #4c6ef5, #15aabf);
       font-family: "Inter", Arial, sans-serif;
-      background: #f4f6fb;
-      color: #222;
+      color: #fff;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
-      min-height: 100vh;
+      align-items: flex-start;
+      padding: 40px 20px;
     }
 
-    .container {
+    .wrapper {
       width: 100%;
       max-width: 900px;
-      padding: 20px;
-      box-sizing: border-box;
     }
 
-    header {
+    .title-box {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     h1 {
-      font-size: 28px;
-      margin-bottom: 6px;
+      font-size: 36px;
+      margin: 0;
+      font-weight: 700;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.25);
+    }
+
+    .subtitle {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-top: 10px;
+    }
+
+    .chat-card {
+      background: #ffffff;
+      color: #222;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+      max-width: 900px;
+      margin: 0 auto;
+      backdrop-filter: blur(12px);
+    }
+
+    .card-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 15px;
       color: #2b3a67;
-    }
-
-    p.subtitle {
-      font-size: 15px;
-      color: #555;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      text-align: center;
     }
 
     iframe {
       width: 100%;
-      height: 600px;
+      height: 650px;
       border: none;
       border-radius: 12px;
-      margin-top: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     }
 
     footer {
-      text-align: center;
       margin-top: 25px;
-      font-size: 13px;
-      color: #777;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.9;
     }
 
     @media (max-width: 600px) {
       iframe {
         height: 520px;
       }
+      h1 { font-size: 28px; }
+      .subtitle { font-size: 15px; }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <div class="wrapper">
 
-    <header>
-      <h1>Navica – Career Guidance Chatbot</h1>
-      <p class="subtitle">Explore IT career paths, skills, courses, and personalized roadmaps.</p>
-    </header>
+    <div class="title-box">
+      <h1>Navica</h1>
+      <div class="subtitle">Your AI-powered Career Guidance Assistant</div>
+    </div>
 
-    <div class="card">
-      <h2 style="margin: 0; font-size: 20px; color: #2b3a67;">
-        Chat with Navica
-      </h2>
+    <div class="chat-card">
+      <div class="card-title">Chat with Navica</div>
 
-      <!-- Your Dialogflow Web Demo iframe (replace src if needed) -->
-      <iframe
-  allow="microphone;"
-  width="100%"
-  height="600"
-  src="https://console.dialogflow.com/api-client/demo/embedded/66bdae65-66e9-9a75-41a0fee182b1"
-  style="border:0;border-radius:12px;">
-</iframe>
+      <iframe 
+        allow="microphone;"
+        src="https://console.dialogflow.com/api-client/demo/embedded/66bdae65-66e9-44e9-9a75-41a0fee182b1">
+      </iframe>
+    </div>
 
+    <footer>© 2025 Navica · Built with Dialogflow + GitHub Pages</footer>
 
-    <footer>
-      Navica © 2025 · AI-Powered Career Direction Assistant  
-    </footer>
   </div>
 </body>
 </html>
